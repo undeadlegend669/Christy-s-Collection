@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop Page</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav>
+        <section>
+            <div class="banner">
+                <a href="../Home page/"><span class ="pages">Home page</span></a>
+                <a href="../shop page/"><span class ="pages">Shop</span></a>
+                <a href="../contact page/"><span class ="pages">Contact us</span></a>
+                <a href="../about page/"><span class ="pages">About us</span></a>
+                <div class="menu"><span class="list"><i class='bxr  bx-menu' style='color:#746f6f'></i> </span></div>
+            </div>
+        </section>
+    </nav>
+    <div class="slideshow-container">
+
+  <!-- Slide 1: Image -->
+  <div class="slide active" data-title="Amazing Item 1" data-desc="This is the first item">
+    <img src="./487223827_664245039546266_643052197982672591_n.jpg" alt="Item 1">
+  </div>
+
+  <!-- Slide 2: Video -->
+  <div class="slide" data-title="Cool Video 2" data-desc="Watch this awesome video">
+    <video src="./WhatsAp Video 2026-01-13 at 10.29.00 PM.mp4" muted autoplay loop playsinline></video>
+  </div>
+
+  <!-- Slide 3: Image -->
+  <div class="slide" data-title="Amazing Item 3" data-desc="Another great item">
+    <video src="./WhatsAp Video 2026-01-13 at 10.29.01 PM.mp4" muted autoplay loop playsinline></video>
+  </div>
+
+  <!-- Arrows -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+
+  <!-- Dots -->
+  <div class="dots"></div>
+
+  <!-- Caption -->
+  <div class="slide-caption">
+    <h3 id="slideTitle"></h3>
+    <p id="slideDesc"></p>
+  </div>
+</div>
+  <!-- Dark Mode Toggle -->
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="darkModeToggle"> <span class="darkmode">🌙 Dark Mode</span>
+    </label>
+  </div>
+
+
+  <!-- View Cart -->
+  <div class="cart-counter">
+    <button id="viewCartBtn">🛒 Cart (<span id="cartCount">0</span>)</button>
+  </div>
+
+  <!-- Items Section -->
+  <div id="itemsSection" class="gallery"></div>
+
+  <!-- Item Popup -->
+  <div id="itemPopup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <img id="popupImg" src="" alt="">
+      <video id="popupVid" src="" controls muted style="display:none;"></video>
+      <h2 id="popupName"></h2>
+      <p id="popupCompany"></p>
+      <p id="popupPrice"></p>
+      <div id="sizesContainer"></div>
+      <button id="addToCartBtn">Add to Cart 🛒</button>
+    </div>
+  </div>
+
+  <!-- Cart Popup -->
+  <div id="cartPopup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cartItems" class="cart-items"></div>
+      <h3>Grand Total: $<span id="grandTotal">0</span></h3>
+      <a href="../payment portal/"><button id="checkoutBtn">Checkout</button></a>
+      <button id="clearCartBtn">Clear Cart</button>
+    </div>
+  </div>
+
+
+    <div class="dropdown">
+      <a href="../Home page/"><div class ="dropdownitem">Home page</div></a>
+      <a href="../shop page/"><div class ="dropdownitem">Shop</div></a>
+      <a href="../contact page/"><div class ="dropdownitem">Contact us</div></a>
+      <a href="../about page/"><div class ="dropdownitem">About us</div></a>
+  </div>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 Christy's Collections. All rights reserved.</p>
+            
+                <a href="https://web.facebook.com/people/Christy-collection/100078823270295/#"><img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/><span>: <i>Christy collection</i></span></a><br>
+                <a href="https://www.instagram.com/tochi_ananti_akpu_agbata/"><img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/><span>: <i>tochi_ananti_akpu_agbata</i></span></a><br>
+                <a href="https://www.tiktok.com/@tochi.ananti.akpu"><img width="48" height="48" src="https://img.icons8.com/color/48/tiktok--v1.png" alt="tiktok--v1"/><span>: <i>tochi.ananti.akpu</i></span></a><br>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/gmail-new.png" alt="gmail-new"/><span>: <i>tochiakpu45@gmail.com</i> </span><br>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/phone--v1.png" alt="phone--v1"/><span>: <i>+234 806 472 3429</i></span>
+              <div class="line"></div>
+            <div class="address"><h3>Our Main Address:</h3> 
+            <p>189 Aminu Kanu Crescent, Wuse 2, Abuja, Nigeria</p></div>
+            <div class="address-2"><h3>Other Branches Near you:</h3> 
+            <p>123 Fashion St, Style City, Banana Island, Lagos, Nigeria</p></div>
+
+
+
+        </div>
+    </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
