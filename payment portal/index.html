@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="payment-container">
+
+    <h1>Secure Payment</h1>
+    <p class="subtitle">Complete your purchase</p>
+
+    <!-- Order Summary -->
+    <div class="summary">
+      <span>Order Total</span>
+      <strong>$<span id="amount">350.00</span></strong>
+    </div>
+
+    <!-- Payment Form -->
+    <form id="paymentForm">
+
+      <div class="form-group">
+        <label>Cardholder Name</label>
+        <input type="text" id="name" placeholder="John Doe">
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Card Number</label>
+        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+        <small class="error"></small>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label>Expiry Date</label>
+          <input type="text" id="expiry" placeholder="MM/YY" maxlength="5">
+          <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label>CVV</label>
+          <input type="password" id="cvv" placeholder="123" maxlength="3">
+          <small class="error"></small>
+        </div>
+      </div>
+
+      <button type="submit">Pay Now 💳</button>
+
+    </form>
+
+    <p class="secure">🔒 Payments are encrypted & secure</p>
+
+  </div>
+  <div class="return"><a href="../shop page/"><i class='bxr  bx-arrow-in-left-square-half' style='color:#767676'></i> Return </a></div>
+
+  <!-- Success Popup -->
+  <div id="successPopup" class="popup">
+    <div class="popup-content">
+      <h2>Payment Successful ✅</h2>
+      <p>Thank you for your purchase!</p>
+      <button id="closePopup">Done</button>
+    </div>
+  </div>
+  <div class="theme-toggle">
+  <label>
+    <input type="checkbox" id="darkModeToggle">
+    🌙 Dark Mode
+  </label>
+</div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
