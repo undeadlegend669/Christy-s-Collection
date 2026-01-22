@@ -20,11 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 const videos = document.querySelectorAll(".video-track, .video");
+const track = document.querySelector(".video-track");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
 // Smooth scrolling for anchor links
 document.addEventListener("DOMContentLoaded", () => {
-  const track = document.querySelector(".video-track");
-  const prevBtn = document.getElementById("prevBtn");
-  const nextBtn = document.getElementById("nextBtn");
 
   let currentIndex = 0;
   const videosPerView = 4;
